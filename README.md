@@ -16,12 +16,19 @@ Then, a blurring filter applied to all the input samples. The blurring filter is
 ![input_blurred_image](./img/input_blurr_image.png)
 
 # Architecture
+A big picture of architecture for three models (1, 2, 3 CNN layers) is in img directory.
 
 # Number of CNN Layers Experiment
 In this experiment, I changed the number of CNN layers from 1 to 3.
 Every CNN layer is followed by a ReLU activation function and Batch Normalization operation. 
 The model continues with a fully connected layer, a dropout layer, and a signle fully connected layer with 2 units to predict the two classes.
 
+Test and Train accuracy for different number of filter (N) and different number of layers (1, 2, 3):
+### Test Accuracy
+![test_all](img/test_all.png)
+
+### Train Accuracy
+![train_all](img/train_all.png)
 
 # Parameters
 * Learning rate: 0.001
