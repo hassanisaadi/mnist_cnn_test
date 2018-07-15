@@ -23,12 +23,18 @@ In this experiment, I changed the number of CNN layers from 1 to 3.
 Every CNN layer is followed by a ReLU activation function and Batch Normalization operation. 
 The model continues with a fully connected layer, a dropout layer, and a signle fully connected layer with 2 units to predict the two classes.
 
-Test and Train accuracy for different number of filter (N) and different number of layers (1, 2, 3):
+Test and Train accuracy for different number of filter (N) and different number of layers (left: 1, middle: 2, right: 3):
 ### Test Accuracy
 ![test_all](img/test_all.png)
 
 ### Train Accuracy
 ![train_all](img/train_all.png)
+
+Legend for different number of filter on each CNN layer (Train/Test):
+![legend](img/legend.png)
+
+# Conclusion
+All the models have a reasonable train accuracy. However, 
 
 # Parameters
 * Learning rate: 0.001
